@@ -1,0 +1,21 @@
+﻿<Window x:Name="window" x:Class="brodilka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dungeon" Height="555" Width="689" Background="#FFF0F0F0" KeyDown="Window_KeyUp">
+    <Grid x:Name="outerGrid" Margin="0,0,0,0">
+        <Grid x:Name="bgGrid" Margin="0,0,0,0"></Grid>
+        <Grid x:Name="myGrid">
+            <TextBlock x:Name="goldCount" HorizontalAlignment="Left" Margin="522,165,0,0" TextWrapping="Wrap" Text="Золото: 0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="health" HorizontalAlignment="Left" Margin="522,186,0,0" TextWrapping="Wrap" Text="Здоровье: 0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="luck" HorizontalAlignment="Left" Margin="522,207,0,0" TextWrapping="Wrap" Text="Удача: 0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="attack1" HorizontalAlignment="Left" Margin="522,228,0,0" TextWrapping="Wrap" Text="Урон меча: 0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="attack2" HorizontalAlignment="Left" Margin="522,249,0,0" TextWrapping="Wrap" Text="Урон перчатки: 0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="attack3" HorizontalAlignment="Left" Margin="522,270,0,0" TextWrapping="Wrap" Text="Урон огненого шара: 0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="heal" HorizontalAlignment="Left" Margin="522,291,0,0" TextWrapping="Wrap" Text="Лечение: 0" VerticalAlignment="Top"/>
+            <Button x:Name="resetButton" Content="Начать игру" HorizontalAlignment="Left" Margin="530,60,0,0" VerticalAlignment="Top" Width="75" FontSize="11" Click="resetButton_Click" RenderTransformOrigin="0.48,0.368" ToolTip="Generates a new dungeon randomly spawning walls."/>
+            <Button x:Name="clearButton" Content="Очистить" HorizontalAlignment="Left" Margin="530,98,0,0" VerticalAlignment="Top" Width="75" FontSize="11" Click="cleartButton_Click" RenderTransformOrigin="0.48,0.368" ToolTip="Remove all obstacles from the board and resets game."/>
+
+        </Grid>
+
+    </Grid>
+</Window>

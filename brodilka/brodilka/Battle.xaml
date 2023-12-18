@@ -1,0 +1,19 @@
+﻿<Window x:Class="brodilka.BattleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BattleWindow" Height="300" Width="480" Closing="Window_Closing" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <TextBlock x:Name="heroHP" HorizontalAlignment="Left" Margin="16,66,0,0" TextWrapping="Wrap" Text="Здоровье: 0" VerticalAlignment="Top" RenderTransformOrigin="0.478,0.764" FontFamily="Sylfaen" FontSize="14" Width="100" TextAlignment="Center"/>
+        <TextBlock x:Name="combatLog" HorizontalAlignment="Center" Margin="0,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="169" Width="158" FontFamily="Sylfaen" FontSize="16" TextAlignment="Center" />
+        <TextBlock x:Name="enemyName" HorizontalAlignment="Left" Margin="351,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" Height="50" Text="Rekkul, Champion of the Blood Guard" TextAlignment="Center" FontFamily="Mathcad UniMath Prime" FontSize="14"/>
+        <TextBlock x:Name="heroName" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="47" Text="Гервант из Ливии" TextAlignment="Center" FontFamily="Sylfaen" FontSize="16" RenderTransformOrigin="0.443,0.6"/>
+        <Image x:Name="enemypic" HorizontalAlignment="Left" Height="85" Margin="362,100,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.51,0.503"/>
+        <Image x:Name="heropic" HorizontalAlignment="Left" Height="100" Margin="16,117,0,0" VerticalAlignment="Top" Width="100" Source="pics/hero.jpg"/>
+        <TextBlock x:Name="enemyHP" HorizontalAlignment="Left" Margin="362,66,0,0" TextWrapping="Wrap" Text="Здоровье: 0" VerticalAlignment="Top" RenderTransformOrigin="0.462,0.543" FontFamily="Sylfaen" FontWeight="Normal" FontStyle="Normal" FontSize="14" Width="100" TextAlignment="Center"/>
+        <Button x:Name="attackButton1" Content="Heroic Strike" HorizontalAlignment="Left" Margin="16,188,0,0" VerticalAlignment="Top" Width="100" BorderThickness="0.1" Opacity="0.7" Background="White" Click="attackButton1_Click" FontFamily="Mathcad UniMath Prime" ToolTip="Attack the enemy with your weapon."/>
+        <Button x:Name="attackButton2" Content="Electrocute" HorizontalAlignment="Left" Margin="16,210,0,0" VerticalAlignment="Top" Width="100" BorderThickness="0.1" Opacity="0.7" Background="White" Click="attackButton2_Click" FontFamily="Mathcad UniMath Prime" ToolTip="Electrocute the enemy with your gauntlet." Visibility="Hidden" />
+        <Button x:Name="attackButton3" Content="Flame Blast" HorizontalAlignment="Left" Margin="16,232,0,0" VerticalAlignment="Top" Width="100" BorderThickness="0.1" Opacity="0.7" Background="White" Click="attackButton3_Click" FontFamily="Mathcad UniMath Prime" ToolTip="Cast a powerful Fire spell that will incinerate your enemy." Visibility="Hidden" />
+        <Button x:Name="heal" Content="Heal" HorizontalAlignment="Left" Margin="16,254,0,0" VerticalAlignment="Top" Width="100" BorderThickness="0.1" Opacity="0.7" Background="White" Click="attackButton4_Click" FontFamily="Mathcad UniMath Prime" ToolTip="Pray to the gods that they will replenish you." Visibility="Hidden" />
+
+    </Grid>
+</Window>
